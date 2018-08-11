@@ -1,0 +1,152 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="de.android.apptemplate2.Fragments.NeighborOptions"
+    android:background="@android:color/black"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:layout_margin="10dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Select The Amount Of Questions"
+            android:gravity="left"
+            android:textSize="20sp"
+            android:layout_marginLeft="4dp"
+            android:textColor="@android:color/white"/>
+
+        <CheckBox
+            android:id="@+id/cbRepeat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:textSize="15sp"
+            android:text="Duplicate Numbers Allowed"/>
+
+        <SeekBar
+            android:id="@+id/sbNumQuestions"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:max="36" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvNumQuestions"
+            android:textSize="17sp"
+            android:layout_marginLeft="4dp"
+            android:layout_marginTop="5dp"
+            android:textColor="@android:color/white"/>
+
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Number Of Neighbors"
+            android:gravity="left"
+            android:textSize="20sp"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="4dp"
+            android:textColor="@android:color/white"/>
+
+        <CheckBox
+            android:id="@+id/cbRndNeighbors"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:layout_marginTop="5dp"
+            android:text="Random Neighbors"/>
+
+        <SeekBar
+            android:id="@+id/sbNumNeighbors"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:max="3" />
+
+
+        <org.florescu.android.rangeseekbar.RangeSeekBar
+            android:id="@+id/rangeSeekbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvNumNeighbors"
+            android:textSize="17sp"
+            android:layout_marginLeft="4dp"
+            android:textColor="@android:color/white"/>
+
+
+        <CheckBox
+            android:id="@+id/cbShowDigits"
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:textSize="15sp"
+            android:layout_height="wrap_content"
+            android:text="Show Digits"
+            />
+
+        <LinearLayout
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+
+
+            <com.nex3z.togglebuttongroup.SingleSelectToggleGroup
+                android:id="@+id/group_choices"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                app:tbgCheckedButton="@+id/choice_FR">
+
+                <com.nex3z.togglebuttongroup.button.CircularToggle
+                    android:id="@+id/choice_FR"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@android:color/white"
+                    android:layout_marginTop="5dp"
+                    android:text="FR"/>
+
+                <com.nex3z.togglebuttongroup.button.CircularToggle
+                    android:id="@+id/choice_US"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@android:color/white"
+                    android:layout_marginTop="5dp"
+                    android:text="US"/>
+
+
+            </com.nex3z.togglebuttongroup.SingleSelectToggleGroup>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Select Board"
+                android:gravity="left"
+                android:textSize="15sp"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="15dp"
+                android:textColor="@android:color/white"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</FrameLayout>

@@ -1,0 +1,81 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="de.android.apptemplate2.Fragments.NeighborHome">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/black">
+
+        <Space android:id="@+id/dummy"
+            android:layout_width="8dp"
+            android:layout_height="0dp"
+            android:layout_centerHorizontal="true"
+            android:visibility="invisible"/>
+
+        <TextView
+            android:id="@+id/tvGame"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_toRightOf="@+id/dummy"
+            android:background="@drawable/arrow_button"
+            android:gravity="center"
+            android:paddingRight="30dp"
+            android:scaleType="centerInside"
+            android:text="PLAY"
+            android:textColor="@android:color/holo_red_dark"
+            android:textSize="28sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvOptions"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_toLeftOf="@+id/dummy"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:background="@drawable/arrow_left_button"
+            android:gravity="center"
+            android:scaleType="centerInside"
+            android:text="OPTIONS"
+            android:paddingLeft="20dp"
+            android:textColor="@android:color/holo_red_dark"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/tvLabel"
+            android:layout_above="@+id/tvGame"
+            android:scaleType="centerInside"
+            android:src="@drawable/eu_kessel" />
+
+        <TextView
+            android:id="@+id/tvLabel"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_alignParentTop="true"
+            android:layout_margin="16dp"
+            android:background="@drawable/sign"
+            android:gravity="center"
+            android:scaleType="centerCrop"
+            android:text="NEIGHBORS"
+            android:textStyle="bold"
+            android:textColor="@android:color/holo_red_light"
+            android:textSize="40sp" />
+
+
+    </RelativeLayout>
+
+</FrameLayout>
